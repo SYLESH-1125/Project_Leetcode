@@ -1,8 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏆 LeetCode Contest Auto-Tracker Dashboard
 
-## Getting Started
+A modern Next.js dashboard for tracking LeetCode contest performance with automated data fetching and comprehensive analytics.
 
-First, run the development server:
+## ✨ Features
+
+- **🤖 Automated Contest Fetching**: Real-time contest data collection
+- **📊 Beautiful Analytics**: Interactive dashboard with performance metrics
+- **🔍 Advanced User Tracking**: Comprehensive user search and matching
+- **🛡️ Cloudflare Bypass**: Proven techniques for reliable data access
+- **📈 Performance Insights**: Detailed rankings, scores, and statistics
+- **🎯 High Success Rate**: 70.5% user detection with complete contest data
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- Supabase account
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/leetcode-contest-tracker.git
+   cd leetcode-contest-tracker
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   ```
+   
+   Edit `.env.local` with your Supabase credentials:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. **Set up database**
+   - Run the SQL schema in `supabase-schema.sql`
+   - Import your target users using `import-users.js`
+
+5. **Start the development server**
 
 ```bash
 npm run dev

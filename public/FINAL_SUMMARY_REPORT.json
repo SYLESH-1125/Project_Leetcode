@@ -1,0 +1,50 @@
+{
+  "extraction_date": "2025-07-31T08:59:02.370Z",
+  "contest": "Weekly Contest 460",
+  "summary": {
+    "total_participants": 5500,
+    "target_users": 61,
+    "found_users": 1,
+    "not_found_users": 60,
+    "success_rate": "1.6%"
+  },
+  "contest_stats": {
+    "max_score": 21,
+    "min_score": 9,
+    "avg_score": 10.506,
+    "total_scored": 5500
+  },
+  "found_users_details": [
+    {
+      "leetcode_id": "Sanjay .S",
+      "display_name": "SANJAY S",
+      "rank": 4740,
+      "score": 9,
+      "finish_time": 1753587705,
+      "matched_variation": "kuk41yjxbs",
+      "original_leetcode_id": "kuK41YJxBS",
+      "contest_data": {
+        "contest_id": 1191,
+        "username": "Sanjay .S",
+        "username_color": null,
+        "user_badge": null,
+        "user_slug": "kuK41YJxBS",
+        "country_code": "IN",
+        "country_name": "India",
+        "rank": 4740,
+        "score": 9,
+        "finish_time": 1753587705,
+        "global_ranking": 0,
+        "data_region": "US",
+        "avatar_url": "https://assets.leetcode.com/users/kuK41YJxBS/avatar_1726812313.png",
+        "replays": null
+      }
+    }
+  ],
+  "system_performance": {
+    "cloudflare_bypass": "SUCCESS",
+    "pages_fetched": 220,
+    "data_integrity": "100%",
+    "extraction_method": "Firefox Headers + Advanced Bypass"
+  }
+}

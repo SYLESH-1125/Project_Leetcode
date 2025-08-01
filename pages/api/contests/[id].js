@@ -6,9 +6,10 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
-      const contestId = parseInt(id)
+      // Keep contest ID as string to match database TEXT type
+      const contestId = id.toString()
       
-      if (isNaN(contestId)) {
+      if (!contestId || contestId === 'undefined') {
         return res.status(400).json({ error: 'Invalid contest ID' })
       }
 
@@ -19,9 +20,9 @@ export default async function handler(req, res) {
         db.getContestStats(contestId)
       ])
 
-      // Separate found and not found users based on whether they have a score
-      const foundUsers = results.filter(r => r.score !== null && r.score !== undefined)
-      const notFoundUsers = results.filter(r => r.score === null || r.score === undefined)
+      // Separate users based on participated column (more accurate than score)
+      const foundUsers = results.filter(r => r.participated === true)
+      const notFoundUsers = results.filter(r => r.participated === false)
 
       const response = {
         contest,

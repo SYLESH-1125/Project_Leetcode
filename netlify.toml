@@ -1,0 +1,41 @@
+[build]
+  functions = "netlify/functions"
+  publish = ".next"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Scheduled Functions for Contest Automation
+[functions]
+  # Weekly Contest Automation - Every Sunday at 10:00 AM IST (4:30 AM UTC)
+  [functions."weekly-contest-automation"]
+    schedule = "30 4 * * 0"
+    
+  # Biweekly Contest Automation - Every other Saturday at 10:15 PM IST (4:45 PM UTC)  
+  [functions."biweekly-contest-automation"]
+    schedule = "45 16 * * 6"
+
+# Headers for CORS
+[[headers]]
+  for = "/.netlify/functions/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+
+# Redirects for API routes
+[[redirects]]
+  from = "/api/automation/trigger"
+  to = "/.netlify/functions/manual-contest-trigger"
+  status = 200
+  
+[[redirects]]
+  from = "/api/automation/weekly"
+  to = "/.netlify/functions/weekly-contest-automation"
+  status = 200
+  
+[[redirects]]
+  from = "/api/automation/biweekly"  
+  to = "/.netlify/functions/biweekly-contest-automation"
+  status = 200

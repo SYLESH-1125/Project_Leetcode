@@ -1,0 +1,137 @@
+{
+  "total_students": 701,
+  "second_year_count": 257,
+  "third_year_count": 444,
+  "sections_found": [
+    "A",
+    "D",
+    "G",
+    "H"
+  ],
+  "sample_students": {
+    "second_year": [
+      {
+        "id": 1,
+        "leetcode_id": "Gayathiri_Devi083",
+        "display_name": "A GAYATHIRIDEVI",
+        "reg_no": "24CS0001",
+        "email": "agayathiridevi.cse2024@citchennai.net",
+        "department": "CSE",
+        "academic_year": "2nd Year",
+        "batch_year": 2024,
+        "section": "A",
+        "active": true
+      },
+      {
+        "id": 2,
+        "leetcode_id": "UZnxAiBa9a",
+        "display_name": "A LOGESSH",
+        "reg_no": "24CS0002",
+        "email": "alogessh.cse2024@citchennai.net ",
+        "department": "CSE",
+        "academic_year": "2nd Year",
+        "batch_year": 2024,
+        "section": "A",
+        "active": true
+      },
+      {
+        "id": 3,
+        "leetcode_id": "Mohitha_annamalai",
+        "display_name": "A MOHITHA",
+        "reg_no": "24CS0003",
+        "email": "amohitha.cse2024@citchennai.net",
+        "department": "CSE",
+        "academic_year": "2nd Year",
+        "batch_year": 2024,
+        "section": "A",
+        "active": true
+      },
+      {
+        "id": 4,
+        "leetcode_id": "Nehashree22",
+        "display_name": "A NEHASHREE",
+        "reg_no": "24CS0004",
+        "email": "anehashree.cse2024@citchennai.net",
+        "department": "CSE",
+        "academic_year": "2nd Year",
+        "batch_year": 2024,
+        "section": "A",
+        "active": true
+      },
+      {
+        "id": 5,
+        "leetcode_id": "ramkarthick18",
+        "display_name": "A RAMKARTHICK",
+        "reg_no": "24CS0005",
+        "email": "aramkarthick.cse2024@citchennai.net",
+        "department": "CSE",
+        "academic_year": "2nd Year",
+        "batch_year": 2024,
+        "section": "A",
+        "active": true
+      }
+    ],
+    "third_year": [
+      {
+        "id": 258,
+        "leetcode_id": "MerwinBlessy",
+        "display_name": "MerwinBlessy",
+        "reg_no": null,
+        "email": null,
+        "department": "CSE",
+        "academic_year": "3rd Year",
+        "batch_year": 2023,
+        "section": null,
+        "active": true
+      },
+      {
+        "id": 259,
+        "leetcode_id": "Mujeeb",
+        "display_name": "Mujeeb",
+        "reg_no": null,
+        "email": null,
+        "department": "CSE",
+        "academic_year": "3rd Year",
+        "batch_year": 2023,
+        "section": null,
+        "active": true
+      },
+      {
+        "id": 260,
+        "leetcode_id": "Senthil_2005",
+        "display_name": "Senthil_2005",
+        "reg_no": null,
+        "email": null,
+        "department": "CSE",
+        "academic_year": "3rd Year",
+        "batch_year": 2023,
+        "section": null,
+        "active": true
+      },
+      {
+        "id": 261,
+        "leetcode_id": "Aashika_B",
+        "display_name": "Aashika_B",
+        "reg_no": null,
+        "email": null,
+        "department": "CSE",
+        "academic_year": "3rd Year",
+        "batch_year": 2023,
+        "section": null,
+        "active": true
+      },
+      {
+        "id": 262,
+        "leetcode_id": "adithyaa_1",
+        "display_name": "adithyaa_1",
+        "reg_no": null,
+        "email": null,
+        "department": "CSE",
+        "academic_year": "3rd Year",
+        "batch_year": 2023,
+        "section": null,
+        "active": true
+      }
+    ]
+  }
+}

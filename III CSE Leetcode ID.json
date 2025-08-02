@@ -1,0 +1,1556 @@
+[
+ {
+  "Column1": "Slno",
+  "III CIT Leetcode IDs": "Reg no",
+  "Column3": "Name",
+  "Column4": "Leetcode ID"
+ },
+ {
+  "Column1": 1,
+  "III CIT Leetcode IDs": "23CS001",
+  "Column3": "A MERWIN BLESSY",
+  "Column4": "MerwinBlessy"
+ },
+ {
+  "Column1": 2,
+  "III CIT Leetcode IDs": "23CS002",
+  "Column3": "A MUJEEB",
+  "Column4": "Mujeeb"
+ },
+ {
+  "Column1": 3,
+  "III CIT Leetcode IDs": "23CS003",
+  "Column3": "A S SENTHIL VELAN",
+  "Column4": "Senthil_2005"
+ },
+ {
+  "Column1": 4,
+  "III CIT Leetcode IDs": "23CS004",
+  "Column3": "AASHIKA B",
+  "Column4": "Aashika_B"
+ },
+ {
+  "Column1": 5,
+  "III CIT Leetcode IDs": "23CS005",
+  "Column3": "ADITHYAA SARAVANAM",
+  "Column4": "adithyaa_1"
+ },
+ {
+  "Column1": 6,
+  "III CIT Leetcode IDs": "23CS006",
+  "Column3": "AISHWARYA G",
+  "Column4": "Aishu1824"
+ },
+ {
+  "Column1": 7,
+  "III CIT Leetcode IDs": "23CS007",
+  "Column3": "AKSHAY J",
+  "Column4": "Akshay2626"
+ },
+ {
+  "Column1": 8,
+  "III CIT Leetcode IDs": "23CS008",
+  "Column3": "AKSHAYA A",
+  "Column4": "aksss03"
+ },
+ {
+  "Column1": 9,
+  "III CIT Leetcode IDs": "23CS009",
+  "Column3": "ARUNKUMAR K",
+  "Column4": "Arunkumark29"
+ },
+ {
+  "Column1": 10,
+  "III CIT Leetcode IDs": "23CS010",
+  "Column3": "ARUNKUMAR M",
+  "Column4": "Arunkumar_CIT2027"
+ },
+ {
+  "Column1": 11,
+  "III CIT Leetcode IDs": "23CS011",
+  "Column3": "ASWIN KUMAR G",
+  "Column4": "ashwin_05"
+ },
+ {
+  "Column1": 12,
+  "III CIT Leetcode IDs": "23CS012",
+  "Column3": "ATCHITHA MAGESH KUMAR",
+  "Column4": "atchitha"
+ },
+ {
+  "Column1": 13,
+  "III CIT Leetcode IDs": "23CS013",
+  "Column3": "ATHIBAN R",
+  "Column4": "Athiban_R"
+ },
+ {
+  "Column1": 14,
+  "III CIT Leetcode IDs": "23CS014",
+  "Column3": "AZIM MOHIDEEN NIWAS",
+  "Column4": "azim"
+ },
+ {
+  "Column1": 15,
+  "III CIT Leetcode IDs": "23CS015",
+  "Column3": "B PARTHA SARATHY",
+  "Column4": "Partha_sarathy5"
+ },
+ {
+  "Column1": 16,
+  "III CIT Leetcode IDs": "23CS016",
+  "Column3": "B SOWMYA",
+  "Column4": "sowmya1110"
+ },
+ {
+  "Column1": 17,
+  "III CIT Leetcode IDs": "23CS017",
+  "Column3": "BALAJI M",
+  "Column4": "jii_xd"
+ },
+ {
+  "Column1": 18,
+  "III CIT Leetcode IDs": "23CS018",
+  "Column3": "BARATH G",
+  "Column4": "barath__g"
+ },
+ {
+  "Column1": 19,
+  "III CIT Leetcode IDs": "23CS019",
+  "Column3": "BARATH M",
+  "Column4": "Barath_2005"
+ },
+ {
+  "Column1": 20,
+  "III CIT Leetcode IDs": "23CS020",
+  "Column3": "BHARATH M",
+  "Column4": "BharathMohanraj"
+ },
+ {
+  "Column1": 21,
+  "III CIT Leetcode IDs": "23CS021",
+  "Column3": "BHARATH SAMPATH",
+  "Column4": "bharathsampath630"
+ },
+ {
+  "Column1": 22,
+  "III CIT Leetcode IDs": "23CS022",
+  "Column3": "BHARATHRAM S",
+  "Column4": "bharathrams1104"
+ },
+ {
+  "Column1": 23,
+  "III CIT Leetcode IDs": "23CS023",
+  "Column3": "BHAVANKUMAR M",
+  "Column4": "bhavan_123"
+ },
+ {
+  "Column1": 24,
+  "III CIT Leetcode IDs": "23CS024",
+  "Column3": "BHRAHMESH A",
+  "Column4": "BHRAHMESH A"
+ },
+ {
+  "Column1": 25,
+  "III CIT Leetcode IDs": "23CS025",
+  "Column3": "BOKKASAM HIMANTH",
+  "Column4": "himanth27"
+ },
+ {
+  "Column1": 26,
+  "III CIT Leetcode IDs": "23CS026",
+  "Column3": "BR PRIYANKKAA",
+  "Column4": "brpriyankkaa"
+ },
+ {
+  "Column1": 27,
+  "III CIT Leetcode IDs": "23CS027",
+  "Column3": "CHAMPATH KRISHNAA K",
+  "Column4": "champathkrishnaa"
+ },
+ {
+  "Column1": 28,
+  "III CIT Leetcode IDs": "23CS028",
+  "Column3": "CHANDHURU M",
+  "Column4": "CHANDHURU_M_07"
+ },
+ {
+  "Column1": 29,
+  "III CIT Leetcode IDs": "23CS029",
+  "Column3": "CHANDIRESH M G",
+  "Column4": "Chan_diresh"
+ },
+ {
+  "Column1": 30,
+  "III CIT Leetcode IDs": "23CS030",
+  "Column3": "CHORKO C",
+  "Column4": "chorko_c"
+ },
+ {
+  "Column1": 31,
+  "III CIT Leetcode IDs": "23CS031",
+  "Column3": "D K SRI ASHWIN",
+  "Column4": "DKSriAshwin"
+ },
+ {
+  "Column1": 32,
+  "III CIT Leetcode IDs": "23CS032",
+  "Column3": "D NEHA",
+  "Column4": "Neha_1406"
+ },
+ {
+  "Column1": 33,
+  "III CIT Leetcode IDs": "23CS033",
+  "Column3": "DANIEL ANTO BENJAMINE",
+  "Column4": "dxnny"
+ },
+ {
+  "Column1": 34,
+  "III CIT Leetcode IDs": "23CS034",
+  "Column3": "DASARIRAJU POORNAGANESH",
+  "Column4": "poornaganesh"
+ },
+ {
+  "Column1": 35,
+  "III CIT Leetcode IDs": "23CS035",
+  "Column3": "DEEPSHIKA A",
+  "Column4": "Deepahika_A"
+ },
+ {
+  "Column1": 36,
+  "III CIT Leetcode IDs": "23CS036",
+  "Column3": "DEVADHARSHINI R",
+  "Column4": "Devadharshini_1504"
+ },
+ {
+  "Column1": 37,
+  "III CIT Leetcode IDs": "23CS037",
+  "Column3": "DHANALAKSHMI D",
+  "Column4": "dhanalakshmi17"
+ },
+ {
+  "Column1": 38,
+  "III CIT Leetcode IDs": "23CS038",
+  "Column3": "DHANUSH KRISHNA C",
+  "Column4": "dhanushkrishnac"
+ },
+ {
+  "Column1": 39,
+  "III CIT Leetcode IDs": "23CS039",
+  "Column3": "DHANUSREE D",
+  "Column4": "dhanusree@05"
+ },
+ {
+  "Column1": 40,
+  "III CIT Leetcode IDs": "23CS040",
+  "Column3": "DHARANISH M B",
+  "Column4": "dharanish_822"
+ },
+ {
+  "Column1": 41,
+  "III CIT Leetcode IDs": "23CS041",
+  "Column3": "DHARSHINI L",
+  "Column4": "DharshiniL_2005"
+ },
+ {
+  "Column1": 42,
+  "III CIT Leetcode IDs": "23CS042",
+  "Column3": "DHARUN P S",
+  "Column4": "dharunps06"
+ },
+ {
+  "Column1": 43,
+  "III CIT Leetcode IDs": "23CS043",
+  "Column3": "DHARUN PRAKASH S R",
+  "Column4": "dharun_28"
+ },
+ {
+  "Column1": 44,
+  "III CIT Leetcode IDs": "23CS044",
+  "Column3": "DHAYANIDHI R",
+  "Column4": "Dhayanidhi_CSE"
+ },
+ {
+  "Column1": 45,
+  "III CIT Leetcode IDs": "23CS045",
+  "Column3": "DHEEKSHAA V M",
+  "Column4": "dheekshaa_vm"
+ },
+ {
+  "Column1": 46,
+  "III CIT Leetcode IDs": "23CS046",
+  "Column3": "DHINAGARAN R",
+  "Column4": "Dhinagaran2005"
+ },
+ {
+  "Column1": 47,
+  "III CIT Leetcode IDs": "23CS047",
+  "Column3": "DIVYA E",
+  "Column4": "Divya_elamaran"
+ },
+ {
+  "Column1": 48,
+  "III CIT Leetcode IDs": "23CS048",
+  "Column3": "E KRISHNA SAKTHI ESWAR",
+  "Column4": "KRISHNASAKTHIESWAR"
+ },
+ {
+  "Column1": 49,
+  "III CIT Leetcode IDs": "23CS049",
+  "Column3": "G GAYATHRI",
+  "Column4": "Gayathri Ganesh"
+ },
+ {
+  "Column1": 50,
+  "III CIT Leetcode IDs": "23CS050",
+  "Column3": "G PREJITH",
+  "Column4": "prejith"
+ },
+ {
+  "Column1": 51,
+  "III CIT Leetcode IDs": "23CS051",
+  "Column3": "GNANESWARAN R",
+  "Column4": "R_Gnaneswaran"
+ },
+ {
+  "Column1": 52,
+  "III CIT Leetcode IDs": "23CS052",
+  "Column3": "GOKUL V",
+  "Column4": "GOKULV27"
+ },
+ {
+  "Column1": 53,
+  "III CIT Leetcode IDs": "23CS053",
+  "Column3": "GOWTHAM PRASATH ELUMALAI",
+  "Column4": "GowthamPrasathElumalai"
+ },
+ {
+  "Column1": 54,
+  "III CIT Leetcode IDs": "23CS054",
+  "Column3": "GUJJALAPUDI TRISHANTHI",
+  "Column4": "gujjalapuditrishanthi"
+ },
+ {
+  "Column1": 55,
+  "III CIT Leetcode IDs": "23CS055",
+  "Column3": "GURU KARTHICK M",
+  "Column4": "GuruKarthick"
+ },
+ {
+  "Column1": 56,
+  "III CIT Leetcode IDs": "23CS056",
+  "Column3": "GURU PRASATH M",
+  "Column4": "guru_20"
+ },
+ {
+  "Column1": 57,
+  "III CIT Leetcode IDs": "23CS057",
+  "Column3": "HARI PRASAD G",
+  "Column4": "hari_2006"
+ },
+ {
+  "Column1": 58,
+  "III CIT Leetcode IDs": "23CS058",
+  "Column3": "HARI SANJAY S",
+  "Column4": "harisanjays"
+ },
+ {
+  "Column1": 59,
+  "III CIT Leetcode IDs": "23CS059",
+  "Column3": "HARINI V",
+  "Column4": "Harini270"
+ },
+ {
+  "Column1": 60,
+  "III CIT Leetcode IDs": "23CS060",
+  "Column3": "HARIPRASATH E",
+  "Column4": "HARIPRASATH_E"
+ },
+ {
+  "Column1": 61,
+  "III CIT Leetcode IDs": "23CS061",
+  "Column3": "HARISH B",
+  "Column4": "_harishb_"
+ },
+ {
+  "Column1": 62,
+  "III CIT Leetcode IDs": "23CS062",
+  "Column3": "HARSHA V",
+  "Column4": "h_a_r_s_h_a"
+ },
+ {
+  "Column1": 63,
+  "III CIT Leetcode IDs": "23CS063",
+  "Column3": "HARSHITHA DINESH RAGHAVAN",
+  "Column4": "_Harshitha__"
+ },
+ {
+  "Column1": 64,
+  "III CIT Leetcode IDs": "23CS064",
+  "Column3": "HARSHIVKRISHNA M",
+  "Column4": "harshiv_krishna"
+ },
+ {
+  "Column1": 65,
+  "III CIT Leetcode IDs": "23CS098",
+  "Column3": "KEERTHI KUMAR C",
+  "Column4": "keerthikumar132005"
+ },
+ {
+  "Column1": 66,
+  "III CIT Leetcode IDs": "23CS065",
+  "Column3": "HAZEERA B",
+  "Column4": "Hazeera_06"
+ },
+ {
+  "Column1": 67,
+  "III CIT Leetcode IDs": "23CS066",
+  "Column3": "HEMA SREE R",
+  "Column4": "HemaSree_R"
+ },
+ {
+  "Column1": 68,
+  "III CIT Leetcode IDs": "23CS067",
+  "Column3": "HEMALATHA M",
+  "Column4": "hema260706"
+ },
+ {
+  "Column1": 69,
+  "III CIT Leetcode IDs": "23CS068",
+  "Column3": "HINDUJAA S",
+  "Column4": "HindujaaS"
+ },
+ {
+  "Column1": 70,
+  "III CIT Leetcode IDs": "23CS069",
+  "Column3": "INBASELVAN AYYANAR",
+  "Column4": "inbaselvan_ayyanar"
+ },
+ {
+  "Column1": 71,
+  "III CIT Leetcode IDs": "23CS070",
+  "Column3": "ISHWARYA P",
+  "Column4": "Ishwarya1524"
+ },
+ {
+  "Column1": 72,
+  "III CIT Leetcode IDs": "23CS071",
+  "Column3": "IYYAPPAN V",
+  "Column4": "IYYAPPAN_V"
+ },
+ {
+  "Column1": 73,
+  "III CIT Leetcode IDs": "23CS072",
+  "Column3": "JASON SANTO LEON J",
+  "Column4": "jasonsanto"
+ },
+ {
+  "Column1": 74,
+  "III CIT Leetcode IDs": "23CS073",
+  "Column3": "JASWANT K",
+  "Column4": "user7750wF"
+ },
+ {
+  "Column1": 75,
+  "III CIT Leetcode IDs": "23CS074",
+  "Column3": "JAYAKUMAR K",
+  "Column4": "Jayakumar2005"
+ },
+ {
+  "Column1": 76,
+  "III CIT Leetcode IDs": "23CS075",
+  "Column3": "JAYANTHI R",
+  "Column4": "rjayanthi"
+ },
+ {
+  "Column1": 77,
+  "III CIT Leetcode IDs": "23CS076",
+  "Column3": "JAYDEEP KUMAR R",
+  "Column4": "jaydeepkumar24"
+ },
+ {
+  "Column1": 78,
+  "III CIT Leetcode IDs": "23CS077",
+  "Column3": "JESMIN MOFI S",
+  "Column4": "jesminmoficse"
+ },
+ {
+  "Column1": 79,
+  "III CIT Leetcode IDs": "23CS078",
+  "Column3": "JOE WESLEY M",
+  "Column4": "Joewesley"
+ },
+ {
+  "Column1": 80,
+  "III CIT Leetcode IDs": "23CS079",
+  "Column3": "JONES SARAH A",
+  "Column4": "JonesSarah"
+ },
+ {
+  "Column1": 81,
+  "III CIT Leetcode IDs": "23CS080",
+  "Column3": "JOSENA BROOSE JEGAN BROOSE KALA",
+  "Column4": "JosenaBrooseJeganBrooseKala "
+ },
+ {
+  "Column1": 82,
+  "III CIT Leetcode IDs": "23CS081",
+  "Column3": "JOSSEY MARIN M",
+  "Column4": "Jossey Marin M "
+ },
+ {
+  "Column1": 83,
+  "III CIT Leetcode IDs": "23CS082",
+  "Column3": "K J PRAHARSHITHA",
+  "Column4": "Pxk4816"
+ },
+ {
+  "Column1": 84,
+  "III CIT Leetcode IDs": "23CS083",
+  "Column3": "K K DANVANTHRAM",
+  "Column4": "DanvanthramKK"
+ },
+ {
+  "Column1": 85,
+  "III CIT Leetcode IDs": "23CS084",
+  "Column3": "K RAHUL NAMBI",
+  "Column4": "rahulnambi05"
+ },
+ {
+  "Column1": 86,
+  "III CIT Leetcode IDs": "23CS085",
+  "Column3": "K SHIVAVIGNESHKANNAN",
+  "Column4": "Shiva_Vignesh_Kannan"
+ },
+ {
+  "Column1": 87,
+  "III CIT Leetcode IDs": "23CS087",
+  "Column3": "KAMAL P",
+  "Column4": "Kamal_406364"
+ },
+ {
+  "Column1": 88,
+  "III CIT Leetcode IDs": "23CS088",
+  "Column3": "KAMALI S",
+  "Column4": "Kamalis_25"
+ },
+ {
+  "Column1": 89,
+  "III CIT Leetcode IDs": "23CS089",
+  "Column3": "KANIMOZHI C",
+  "Column4": "C_Kanimozhi"
+ },
+ {
+  "Column1": 90,
+  "III CIT Leetcode IDs": "23CS090",
+  "Column3": "KANISHKA D",
+  "Column4": "Kanishka_62"
+ },
+ {
+  "Column1": 91,
+  "III CIT Leetcode IDs": "23CS091",
+  "Column3": "KARTHI S",
+  "Column4": "Karthi1818"
+ },
+ {
+  "Column1": 92,
+  "III CIT Leetcode IDs": "23CS092",
+  "Column3": "KARTHICK R M",
+  "Column4": "KARTHICK R M"
+ },
+ {
+  "Column1": 93,
+  "III CIT Leetcode IDs": "23CS093",
+  "Column3": "KARTHIK S",
+  "Column4": "Karthik__s"
+ },
+ {
+  "Column1": 94,
+  "III CIT Leetcode IDs": "23CS094",
+  "Column3": "KARTHIKEYAN M G",
+  "Column4": "MGKARTHI "
+ },
+ {
+  "Column1": 95,
+  "III CIT Leetcode IDs": "23CS095",
+  "Column3": "KARUNIYA A S",
+  "Column4": "Karuniyaas"
+ },
+ {
+  "Column1": 96,
+  "III CIT Leetcode IDs": "23CS096",
+  "Column3": "KATHIR S",
+  "Column4": "Kathir_S"
+ },
+ {
+  "Column1": 97,
+  "III CIT Leetcode IDs": "23CS097",
+  "Column3": "KAVIVIKASH A S",
+  "Column4": "Kavivikash_A_S-CSE"
+ },
+ {
+  "Column1": 98,
+  "III CIT Leetcode IDs": "23CS099",
+  "Column3": "KEVIN ANDERSON V",
+  "Column4": "KevinAndersonVCSE"
+ },
+ {
+  "Column1": 99,
+  "III CIT Leetcode IDs": "23CS100",
+  "Column3": "KIRAN NANDHAAN B K",
+  "Column4": "Kiran nandhaan"
+ },
+ {
+  "Column1": 100,
+  "III CIT Leetcode IDs": "23CS101",
+  "Column3": "KISHORE D",
+  "Column4": "Kishore_D"
+ },
+ {
+  "Column1": 101,
+  "III CIT Leetcode IDs": "23CS102",
+  "Column3": "KISHORE J V",
+  "Column4": "KishoreJV"
+ },
+ {
+  "Column1": 102,
+  "III CIT Leetcode IDs": "23CS103",
+  "Column3": "KISHORE S",
+  "Column4": "chrisprat007"
+ },
+ {
+  "Column1": 103,
+  "III CIT Leetcode IDs": "23CS104",
+  "Column3": "KISHOUR S",
+  "Column4": "Kishour"
+ },
+ {
+  "Column1": 104,
+  "III CIT Leetcode IDs": "23CS105",
+  "Column3": "KOLLI JAI VIDHURAN",
+  "Column4": "Jaividhuran123"
+ },
+ {
+  "Column1": 105,
+  "III CIT Leetcode IDs": "23CS106",
+  "Column3": "KRISHNAKUMAR V",
+  "Column4": "krishnakumar-v"
+ },
+ {
+  "Column1": 106,
+  "III CIT Leetcode IDs": "23CS107",
+  "Column3": "LATHIKA I",
+  "Column4": "Lathika_I"
+ },
+ {
+  "Column1": 107,
+  "III CIT Leetcode IDs": "23CS108",
+  "Column3": "M GOWTHAM",
+  "Column4": "mmgowtham2005"
+ },
+ {
+  "Column1": 108,
+  "III CIT Leetcode IDs": "23CS109",
+  "Column3": "M LAKSHITHAA VAISHNAVEE",
+  "Column4": "Lakshitha13"
+ },
+ {
+  "Column1": 109,
+  "III CIT Leetcode IDs": "23CS110",
+  "Column3": "M MANOJ KUMAR",
+  "Column4": "m_manoj_kumar"
+ },
+ {
+  "Column1": 110,
+  "III CIT Leetcode IDs": "23CS111",
+  "Column3": "M YUVADARSHAN",
+  "Column4": "Yuvadarshan"
+ },
+ {
+  "Column1": 111,
+  "III CIT Leetcode IDs": "23CS112",
+  "Column3": "MANISH BARATH M",
+  "Column4": "barath04"
+ },
+ {
+  "Column1": 112,
+  "III CIT Leetcode IDs": "23CS113",
+  "Column3": "MANISHAA P",
+  "Column4": "Manishaa_P"
+ },
+ {
+  "Column1": 113,
+  "III CIT Leetcode IDs": "23CS114",
+  "Column3": "MANOBALAN T",
+  "Column4": "_MANOBALAN_2399_"
+ },
+ {
+  "Column1": 114,
+  "III CIT Leetcode IDs": "23CS115",
+  "Column3": "MANOJ MANICKAM S",
+  "Column4": "ManojCse"
+ },
+ {
+  "Column1": 115,
+  "III CIT Leetcode IDs": "23CS116",
+  "Column3": "MANUPRASAD M B",
+  "Column4": "Manuprasad"
+ },
+ {
+  "Column1": 116,
+  "III CIT Leetcode IDs": "23CS117",
+  "Column3": "MARY JASPER EPSIBHA R",
+  "Column4": "epsijas2005"
+ },
+ {
+  "Column1": 117,
+  "III CIT Leetcode IDs": "23CS118",
+  "Column3": "MATHIVANAN S",
+  "Column4": "Mathivanan07"
+ },
+ {
+  "Column1": 118,
+  "III CIT Leetcode IDs": "23CS119",
+  "Column3": "MATHIYARASAN S",
+  "Column4": "ARTIST_003"
+ },
+ {
+  "Column1": 119,
+  "III CIT Leetcode IDs": "23CS120",
+  "Column3": "MEHUL R S",
+  "Column4": "Mehul10717"
+ },
+ {
+  "Column1": 120,
+  "III CIT Leetcode IDs": "23CS121",
+  "Column3": "MITHRADEVI K",
+  "Column4": "Mithradevi kumar"
+ },
+ {
+  "Column1": 121,
+  "III CIT Leetcode IDs": "23CS122",
+  "Column3": "MITHUN S",
+  "Column4": "Mithun005"
+ },
+ {
+  "Column1": 122,
+  "III CIT Leetcode IDs": "23CS123",
+  "Column3": "MOHAMED FAIZAL M R",
+  "Column4": "Faizal_mr"
+ },
+ {
+  "Column1": 123,
+  "III CIT Leetcode IDs": "23CS124",
+  "Column3": "MOHAMED JARIS",
+  "Column4": "Mohamed Jaris "
+ },
+ {
+  "Column1": 124,
+  "III CIT Leetcode IDs": "23CS125",
+  "Column3": "MOHAMED SHAFEE M",
+  "Column4": "Shafee_77"
+ },
+ {
+  "Column1": 125,
+  "III CIT Leetcode IDs": "23CS126",
+  "Column3": "MOHIT RAJ S",
+  "Column4": "smohitraj"
+ },
+ {
+  "Column1": 126,
+  "III CIT Leetcode IDs": "23CS127",
+  "Column3": "MONIKASREE R",
+  "Column4": "Monika_sree"
+ },
+ {
+  "Column1": 127,
+  "III CIT Leetcode IDs": "23CS128",
+  "Column3": "MONIS RAM P R",
+  "Column4": "Monis_ram_cseb_2023"
+ },
+ {
+  "Column1": 128,
+  "III CIT Leetcode IDs": "23CS129",
+  "Column3": "MONISH G",
+  "Column4": "monishg_cse_b2023"
+ },
+ {
+  "Column1": 129,
+  "III CIT Leetcode IDs": "23CS131",
+  "Column3": "M. MONISHA",
+  "Column4": "Monisha Manikandan"
+ },
+ {
+  "Column1": 130,
+  "III CIT Leetcode IDs": "23CS132",
+  "Column3": "Mugilan M",
+  "Column4": "mugilanm"
+ },
+ {
+  "Column1": 131,
+  "III CIT Leetcode IDs": "23CS133",
+  "Column3": "Mukesh G",
+  "Column4": "Mukesh_G7172"
+ },
+ {
+  "Column1": 132,
+  "III CIT Leetcode IDs": "23CS134",
+  "Column3": "MUKHILA R",
+  "Column4": "Mukhila_R"
+ },
+ {
+  "Column1": 133,
+  "III CIT Leetcode IDs": "23CS135",
+  "Column3": "Mullaivendan R",
+  "Column4": "Mullaivendan24"
+ },
+ {
+  "Column1": 134,
+  "III CIT Leetcode IDs": "23cs136",
+  "Column3": "Nafia Sulthana ",
+  "Column4": "nafiasulthana14 "
+ },
+ {
+  "Column1": 135,
+  "III CIT Leetcode IDs": "23CS137",
+  "Column3": "Nanda S",
+  "Column4": "nanda-s"
+ },
+ {
+  "Column1": 136,
+  "III CIT Leetcode IDs": "23cs138",
+  "Column3": "Narendran V C ",
+  "Column4": "narendranvc1907"
+ },
+ {
+  "Column1": 137,
+  "III CIT Leetcode IDs": "23CS139",
+  "Column3": "Narmatha G ",
+  "Column4": "Narmatha_G"
+ },
+ {
+  "Column1": 138,
+  "III CIT Leetcode IDs": "23cs140",
+  "Column3": "Naveen RD ",
+  "Column4": "Naveen2306"
+ },
+ {
+  "Column1": 139,
+  "III CIT Leetcode IDs": "23cs141",
+  "Column3": "Neelesh R",
+  "Column4": "Neelesh14"
+ },
+ {
+  "Column1": 140,
+  "III CIT Leetcode IDs": "23cs142",
+  "Column3": "NELAPATI PRAVEEN KUMAR ",
+  "Column4": "N_PRAVEENKUMAR"
+ },
+ {
+  "Column1": 141,
+  "III CIT Leetcode IDs": "23cs143",
+  "Column3": "Nethaji V L",
+  "Column4": "Nethajicse"
+ },
+ {
+  "Column1": 142,
+  "III CIT Leetcode IDs": "23cs144",
+  "Column3": "Nijandhan S",
+  "Column4": "nijandhan23cs144"
+ },
+ {
+  "Column1": 143,
+  "III CIT Leetcode IDs": "23CS145",
+  "Column3": "M.S. Nikinth Sasen ",
+  "Column4": "Nikinth05"
+ },
+ {
+  "Column1": 144,
+  "III CIT Leetcode IDs": "23cs146",
+  "Column3": "Nirmal Kumar P",
+  "Column4": "naresh__9"
+ },
+ {
+  "Column1": 145,
+  "III CIT Leetcode IDs": "23CS147",
+  "Column3": "Nirmal Prasath B ",
+  "Column4": "NirmalPrasathB"
+ },
+ {
+  "Column1": 146,
+  "III CIT Leetcode IDs": "23CS148",
+  "Column3": "Nishanth S",
+  "Column4": "nishanths06 "
+ },
+ {
+  "Column1": 147,
+  "III CIT Leetcode IDs": "23cs149",
+  "Column3": "Nishintha A",
+  "Column4": "Nishintha "
+ },
+ {
+  "Column1": 148,
+  "III CIT Leetcode IDs": "23CS150",
+  "Column3": "Nithesh M",
+  "Column4": "Nithesh2005"
+ },
+ {
+  "Column1": 149,
+  "III CIT Leetcode IDs": "23cs151",
+  "Column3": "G.Nithish kumar ",
+  "Column4": "Nithishkumar21Nk "
+ },
+ {
+  "Column1": 150,
+  "III CIT Leetcode IDs": "23CS152",
+  "Column3": "J.Nivedha",
+  "Column4": "nivethaj.cse2023@citchennai.net"
+ },
+ {
+  "Column1": 151,
+  "III CIT Leetcode IDs": "23CS153",
+  "Column3": "Venkatesh.O",
+  "Column4": "user5204Tn"
+ },
+ {
+  "Column1": 152,
+  "III CIT Leetcode IDs": "23CS154",
+  "Column3": "Oviya M.S",
+  "Column4": "MSOviya04"
+ },
+ {
+  "Column1": 153,
+  "III CIT Leetcode IDs": "23cs155",
+  "Column3": "PriyaDharsini P",
+  "Column4": "dharsinidhipu2006"
+ },
+ {
+  "Column1": 154,
+  "III CIT Leetcode IDs": "23CS156",
+  "Column3": "PARVATHAREDDY SUHITH REDDY ",
+  "Column4": "suhith_reddy__"
+ },
+ {
+  "Column1": 155,
+  "III CIT Leetcode IDs": "23cs157",
+  "Column3": "pawan kalyan",
+  "Column4": "nill"
+ },
+ {
+  "Column1": 156,
+  "III CIT Leetcode IDs": "23cs158",
+  "Column3": "Perksha S",
+  "Column4": "Perksha S"
+ },
+ {
+  "Column1": 157,
+  "III CIT Leetcode IDs": "23CS159",
+  "Column3": "PODAKANTI SUHAS ",
+  "Column4": "SUHAS1908"
+ },
+ {
+  "Column1": 158,
+  "III CIT Leetcode IDs": "23CS160",
+  "Column3": "Pon Raaj V",
+  "Column4": "ponraaj"
+ },
+ {
+  "Column1": 159,
+  "III CIT Leetcode IDs": "23cs161",
+  "Column3": "Praveen Kumar K",
+  "Column4": "praveenkumark2006"
+ },
+ {
+  "Column1": 160,
+  "III CIT Leetcode IDs": "23CS162",
+  "Column3": "Prem JM",
+  "Column4": "premsks67"
+ },
+ {
+  "Column1": 161,
+  "III CIT Leetcode IDs": "23CS163",
+  "Column3": "Prem kumar E ",
+  "Column4": "prem07_2"
+ },
+ {
+  "Column1": 162,
+  "III CIT Leetcode IDs": "23cs164",
+  "Column3": "Pushpa.R",
+  "Column4": "Rajasekar_Pushpa"
+ },
+ {
+  "Column1": 163,
+  "III CIT Leetcode IDs": "23cs165",
+  "Column3": "R Amrudh Rajaa",
+  "Column4": "amrudh_r"
+ },
+ {
+  "Column1": 164,
+  "III CIT Leetcode IDs": "23CS166",
+  "Column3": "R Aravindh Rajaa ",
+  "Column4": "Aravindh_17"
+ },
+ {
+  "Column1": 165,
+  "III CIT Leetcode IDs": "23CS167",
+  "Column3": "R. Kavinaya",
+  "Column4": "Kavinayaravi"
+ },
+ {
+  "Column1": 166,
+  "III CIT Leetcode IDs": "23CS168",
+  "Column3": "R S MONISH",
+  "Column4": "MONISH-RS"
+ },
+ {
+  "Column1": 167,
+  "III CIT Leetcode IDs": "23cs169",
+  "Column3": "R Sridarsh ",
+  "Column4": "Sridarsh7858"
+ },
+ {
+  "Column1": 168,
+  "III CIT Leetcode IDs": "23cs170",
+  "Column3": "Rabees P",
+  "Column4": "rabees1566"
+ },
+ {
+  "Column1": 169,
+  "III CIT Leetcode IDs": "23CS171",
+  "Column3": "Rahul Jahannathan K",
+  "Column4": "Rahul_Jahannathan"
+ },
+ {
+  "Column1": 170,
+  "III CIT Leetcode IDs": "23cs172",
+  "Column3": "Rahul. M",
+  "Column4": "Rahul_1803"
+ },
+ {
+  "Column1": 171,
+  "III CIT Leetcode IDs": "23CS173",
+  "Column3": "RAHUL RAMAMOORTHY ",
+  "Column4": "RAHULMOST"
+ },
+ {
+  "Column1": 172,
+  "III CIT Leetcode IDs": "23CS174",
+  "Column3": "RAJ KALYAN T",
+  "Column4": "trajkalyan"
+ },
+ {
+  "Column1": 173,
+  "III CIT Leetcode IDs": "23cs175",
+  "Column3": "Rajarajeshwari.B",
+  "Column4": "RajarajeshwariBCSE"
+ },
+ {
+  "Column1": 174,
+  "III CIT Leetcode IDs": "23cs176",
+  "Column3": "Rajesh A ",
+  "Column4": "Rajesh1826"
+ },
+ {
+  "Column1": 175,
+  "III CIT Leetcode IDs": "23CS177",
+  "Column3": "RAKESH KOMARA ",
+  "Column4": "rakesh_komara"
+ },
+ {
+  "Column1": 176,
+  "III CIT Leetcode IDs": "23CS178",
+  "Column3": "RAKESH S P",
+  "Column4": "rakeshsp330"
+ },
+ {
+  "Column1": 177,
+  "III CIT Leetcode IDs": "23CS179",
+  "Column3": "RAMAMUTHUKUMARAN S",
+  "Column4": "srmk2005"
+ },
+ {
+  "Column1": 178,
+  "III CIT Leetcode IDs": "23CS180",
+  "Column3": "RAMANA GANTHAN S",
+  "Column4": "RAMANA_GANTHAN_S"
+ },
+ {
+  "Column1": 179,
+  "III CIT Leetcode IDs": "23CS181",
+  "Column3": "RamPrakash v",
+  "Column4": "RamPrakash-V"
+ },
+ {
+  "Column1": 180,
+  "III CIT Leetcode IDs": "23CS182",
+  "Column3": "Ramsriprasaath D ",
+  "Column4": "Ramsriprasaath_D"
+ },
+ {
+  "Column1": 181,
+  "III CIT Leetcode IDs": "23CS183",
+  "Column3": "REINA MERCY R",
+  "Column4": "reinamercy"
+ },
+ {
+  "Column1": 182,
+  "III CIT Leetcode IDs": "23CS184",
+  "Column3": "G.Revathi",
+  "Column4": "REVATHIGCSE "
+ },
+ {
+  "Column1": 183,
+  "III CIT Leetcode IDs": "23CS185",
+  "Column3": "Reyna A.T",
+  "Column4": "REYNA_AT"
+ },
+ {
+  "Column1": 184,
+  "III CIT Leetcode IDs": "23cs186",
+  "Column3": "Ritesh Murugan naikar ",
+  "Column4": "user6491Rj"
+ },
+ {
+  "Column1": 185,
+  "III CIT Leetcode IDs": "23CS187",
+  "Column3": "Rithick Bharathwaj S ",
+  "Column4": "Rithick_0511"
+ },
+ {
+  "Column1": 186,
+  "III CIT Leetcode IDs": "23CS188",
+  "Column3": "RITHICK K",
+  "Column4": "rithick95"
+ },
+ {
+  "Column1": 187,
+  "III CIT Leetcode IDs": "23cs189",
+  "Column3": "Rithika D",
+  "Column4": "Rithikadeivasikamanid_2005"
+ },
+ {
+  "Column1": 188,
+  "III CIT Leetcode IDs": "23cs190",
+  "Column3": "Rithvik M",
+  "Column4": "rithvik0704"
+ },
+ {
+  "Column1": 189,
+  "III CIT Leetcode IDs": "23CS191",
+  "Column3": "Rohit Kesav J",
+  "Column4": "Rohit KJ"
+ },
+ {
+  "Column1": 190,
+  "III CIT Leetcode IDs": "23CS192",
+  "Column3": "Rohith Narayanan",
+  "Column4": "rohith_23cs192"
+ },
+ {
+  "Column1": 191,
+  "III CIT Leetcode IDs": "23cs193",
+  "Column3": "Roopa",
+  "Column4": "ROOPA N CSE"
+ },
+ {
+  "Column1": 192,
+  "III CIT Leetcode IDs": "23CS194",
+  "Column3": "S Aditya",
+  "Column4": "Aditya-145990 "
+ },
+ {
+  "Column1": 193,
+  "III CIT Leetcode IDs": "23CS195",
+  "Column3": "S ALWIN ARUL SHELVAN",
+  "Column4": "Alwin_78"
+ },
+ {
+  "Column1": 194,
+  "III CIT Leetcode IDs": "23CS196",
+  "Column3": "S B RAMYA",
+  "Column4": "SBRamya"
+ },
+ {
+  "Column1": 195,
+  "III CIT Leetcode IDs": "23CS197",
+  "Column3": "S DARSHAN",
+  "Column4": "Harshitha_05"
+ },
+ {
+  "Column1": 196,
+  "III CIT Leetcode IDs": "23CS198",
+  "Column3": "S HARSHITHA",
+  "Column4": "DarshanSridharbabu"
+ },
+ {
+  "Column1": 197,
+  "III CIT Leetcode IDs": "23CS199",
+  "Column3": "S YOGAKRISHNAN",
+  "Column4": "user418cu "
+ },
+ {
+  "Column1": 198,
+  "III CIT Leetcode IDs": "23CS201",
+  "Column3": "SABTHAGIRI S",
+  "Column4": "S_SABTHAGIRI"
+ },
+ {
+  "Column1": 199,
+  "III CIT Leetcode IDs": "23CS202",
+  "Column3": "SADHANA M",
+  "Column4": "SadhanaCse"
+ },
+ {
+  "Column1": 200,
+  "III CIT Leetcode IDs": "23CS203",
+  "Column3": "SAI AREVINTH RAAJ B",
+  "Column4": "saiarevinth "
+ },
+ {
+  "Column1": 201,
+  "III CIT Leetcode IDs": "23CS204",
+  "Column3": "SAMVRUTHA S B",
+  "Column4": "samvrutha03"
+ },
+ {
+  "Column1": 202,
+  "III CIT Leetcode IDs": "23CS205",
+  "Column3": "SANDHIYA SRI R",
+  "Column4": "SandhiyaSriR"
+ },
+ {
+  "Column1": 203,
+  "III CIT Leetcode IDs": "23CS206",
+  "Column3": "SANDHYA C",
+  "Column4": "SANDHYAC_01"
+ },
+ {
+  "Column1": 204,
+  "III CIT Leetcode IDs": "23CS207",
+  "Column3": "SANJANA R",
+  "Column4": "sanjanar_31"
+ },
+ {
+  "Column1": 205,
+  "III CIT Leetcode IDs": "23CS208",
+  "Column3": "SANJAY RAJAN R",
+  "Column4": "sanjay_rajan_r"
+ },
+ {
+  "Column1": 206,
+  "III CIT Leetcode IDs": "23CS209",
+  "Column3": "SANTHOSH S",
+  "Column4": "santhoshsparky "
+ },
+ {
+  "Column1": 207,
+  "III CIT Leetcode IDs": "23CS210",
+  "Column3": "SANTHOSHKUMAR P",
+  "Column4": "Santhoshkumar_cit"
+ },
+ {
+  "Column1": 208,
+  "III CIT Leetcode IDs": "23CS211",
+  "Column3": "SASITHARAN S",
+  "Column4": "Sasitharan S"
+ },
+ {
+  "Column1": 209,
+  "III CIT Leetcode IDs": "23CS212",
+  "Column3": "SATHIKA BEGUM M",
+  "Column4": "SATHIKABEGUMM "
+ },
+ {
+  "Column1": 210,
+  "III CIT Leetcode IDs": "23CS213",
+  "Column3": "SEMMATHI G S",
+  "Column4": "semmathi_g_s"
+ },
+ {
+  "Column1": 211,
+  "III CIT Leetcode IDs": "23CS214",
+  "Column3": "SHANKARIPRIYA S",
+  "Column4": "shankaripriya609"
+ },
+ {
+  "Column1": 212,
+  "III CIT Leetcode IDs": "23CS215",
+  "Column3": "SHANMUGA SHYAM B",
+  "Column4": "ShanmugaShyamB "
+ },
+ {
+  "Column1": 213,
+  "III CIT Leetcode IDs": "23CS216",
+  "Column3": "SHARAN PRASHANTH S",
+  "Column4": "Sharan_Prashanth"
+ },
+ {
+  "Column1": 214,
+  "III CIT Leetcode IDs": "23CS217",
+  "Column3": "SHIVA SANKARAN S",
+  "Column4": "shiva__18"
+ },
+ {
+  "Column1": 215,
+  "III CIT Leetcode IDs": "23CS218",
+  "Column3": "SHIVAANI V P",
+  "Column4": "shivaanivp "
+ },
+ {
+  "Column1": 216,
+  "III CIT Leetcode IDs": "23CS219",
+  "Column3": "SHREE CHARAN KANNAN",
+  "Column4": "shreegraphy"
+ },
+ {
+  "Column1": 217,
+  "III CIT Leetcode IDs": "23CS220",
+  "Column3": "SHYAM SUNDER V",
+  "Column4": "shyam_sunder_2006"
+ },
+ {
+  "Column1": 218,
+  "III CIT Leetcode IDs": "23CS221",
+  "Column3": "SIVA V",
+  "Column4": "Siva2156"
+ },
+ {
+  "Column1": 219,
+  "III CIT Leetcode IDs": "23CS222",
+  "Column3": "SOUNDHARYA M",
+  "Column4": "Soundharya Mohab"
+ },
+ {
+  "Column1": 220,
+  "III CIT Leetcode IDs": "23CS223",
+  "Column3": "SRE SANDHYA K",
+  "Column4": "Sre_Sandhya_K"
+ },
+ {
+  "Column1": 221,
+  "III CIT Leetcode IDs": "23CS224",
+  "Column3": "SRIEE MATHANGHI K T",
+  "Column4": "Srieemathanghi1721"
+ },
+ {
+  "Column1": 222,
+  "III CIT Leetcode IDs": "23CS225",
+  "Column3": "SUBATHRA R",
+  "Column4": "Subathra2005"
+ },
+ {
+  "Column1": 223,
+  "III CIT Leetcode IDs": "23CS226",
+  "Column3": "SUDHARSHAN R",
+  "Column4": "SUDHARSHAN_CSE "
+ },
+ {
+  "Column1": 224,
+  "III CIT Leetcode IDs": "23CS227",
+  "Column3": "SUJAN P",
+  "Column4": "sujan-p"
+ },
+ {
+  "Column1": 225,
+  "III CIT Leetcode IDs": "23CS228",
+  "Column3": "SURENDAR D",
+  "Column4": "Suren_2005"
+ },
+ {
+  "Column1": 226,
+  "III CIT Leetcode IDs": "23CS229",
+  "Column3": "SUVETHA R",
+  "Column4": "SUVETHARAVIKUMAR "
+ },
+ {
+  "Column1": 227,
+  "III CIT Leetcode IDs": "23CS230",
+  "Column3": "SWETHA R",
+  "Column4": "Swetha_1905"
+ },
+ {
+  "Column1": 228,
+  "III CIT Leetcode IDs": "23CS231",
+  "Column3": "SWETHA S",
+  "Column4": "Swethas_14"
+ },
+ {
+  "Column1": 229,
+  "III CIT Leetcode IDs": "23CS232",
+  "Column3": "T ASHWIN",
+  "Column4": "DANGERWISE"
+ },
+ {
+  "Column1": 230,
+  "III CIT Leetcode IDs": "23CS233",
+  "Column3": "TANUSHRI B",
+  "Column4": "tanushri03"
+ },
+ {
+  "Column1": 231,
+  "III CIT Leetcode IDs": "23CS234",
+  "Column3": "TARUN T",
+  "Column4": "TarunThimmayan"
+ },
+ {
+  "Column1": 232,
+  "III CIT Leetcode IDs": "23CS235",
+  "Column3": "TARUNI S R",
+  "Column4": "Taruni_Suresh"
+ },
+ {
+  "Column1": 233,
+  "III CIT Leetcode IDs": "23CS236",
+  "Column3": "THAARANY S",
+  "Column4": "Thaarany "
+ },
+ {
+  "Column1": 234,
+  "III CIT Leetcode IDs": "23CS237",
+  "Column3": "TWINSRIRAM V",
+  "Column4": "Twinsriram_V"
+ },
+ {
+  "Column1": 235,
+  "III CIT Leetcode IDs": "23CS238",
+  "Column3": "UDHAYA NITHI G M",
+  "Column4": "udhayaNithiCSE "
+ },
+ {
+  "Column1": 236,
+  "III CIT Leetcode IDs": "23CS239",
+  "Column3": "UDHAYAKUMAR K",
+  "Column4": "Udhaya_005"
+ },
+ {
+  "Column1": 237,
+  "III CIT Leetcode IDs": "23CS240",
+  "Column3": "VAISHIKA S",
+  "Column4": "VAISHIKA S"
+ },
+ {
+  "Column1": 238,
+  "III CIT Leetcode IDs": "23CS241",
+  "Column3": "VALLURU JYOSHNA",
+  "Column4": "Jyoshna -2005"
+ },
+ {
+  "Column1": 239,
+  "III CIT Leetcode IDs": "23CS242",
+  "Column3": "VENNELA IRUPURI ",
+  "Column4": "Vennelaips_csed "
+ },
+ {
+  "Column1": 240,
+  "III CIT Leetcode IDs": "23CS243",
+  "Column3": "VIMALAN S",
+  "Column4": "Vimal_S"
+ },
+ {
+  "Column1": 241,
+  "III CIT Leetcode IDs": "23CS245",
+  "Column3": "VISHAL D",
+  "Column4": "VishalD8898"
+ },
+ {
+  "Column1": 242,
+  "III CIT Leetcode IDs": "23CS246",
+  "Column3": "VISHALINI M",
+  "Column4": "Vishalinicsed"
+ },
+ {
+  "Column1": 243,
+  "III CIT Leetcode IDs": "23CS247",
+  "Column3": "VISHNU A",
+  "Column4": "Svishnupriya24"
+ },
+ {
+  "Column1": 244,
+  "III CIT Leetcode IDs": "23CS248",
+  "Column3": "VISHNU PRIYA S",
+  "Column4": "VishnuArun001"
+ },
+ {
+  "Column1": 245,
+  "III CIT Leetcode IDs": "23CS249",
+  "Column3": "VISHVA N",
+  "Column4": "user4176w"
+ },
+ {
+  "Column1": 246,
+  "III CIT Leetcode IDs": "23CS250",
+  "Column3": "VISHWA P",
+  "Column4": "Vishwa-03"
+ },
+ {
+  "Column1": 247,
+  "III CIT Leetcode IDs": "23CS251",
+  "Column3": "Y P HANS RAYNELL",
+  "Column4": "Hansraynell_27"
+ },
+ {
+  "Column1": 248,
+  "III CIT Leetcode IDs": "23CS252",
+  "Column3": "YAAZHINI A",
+  "Column4": "Yaazhini1409"
+ },
+ {
+  "Column1": 249,
+  "III CIT Leetcode IDs": "23CS253",
+  "Column3": "YASHWANTH S",
+  "Column4": "yashwanth_010906"
+ },
+ {
+  "Column1": 250,
+  "III CIT Leetcode IDs": "23CS254",
+  "Column3": "YOKATHI T",
+  "Column4": "Yokathi Thirumurugan"
+ },
+ {
+  "Column1": 251,
+  "III CIT Leetcode IDs": "23CS255",
+  "Column3": "YUDHEEKSHANA P",
+  "Column4": "Yudheekshana"
+ },
+ {
+  "Column1": 252,
+  "III CIT Leetcode IDs": "23CS256",
+  "Column3": "YUKTHIKA S S",
+  "Column4": "YUKTHIKA_SS"
+ },
+ {
+  "Column1": 253,
+  "III CIT Leetcode IDs": "23CS257",
+  "Column3": "YUVASHRI K",
+  "Column4": "user3263Je"
+ },
+ {
+  "Column1": 254,
+  "III CIT Leetcode IDs": "23CS301",
+  "Column3": "BARSATH ALI N",
+  "Column4": "barsathali-12_n"
+ },
+ {
+  "Column1": 255,
+  "III CIT Leetcode IDs": "23CS302",
+  "Column3": "Chenningiri.M.S",
+  "Column4": "chenningiri "
+ },
+ {
+  "Column1": 256,
+  "III CIT Leetcode IDs": "23CS303",
+  "Column3": "Jai akash.N.S",
+  "Column4": "JaiAkashNS10"
+ },
+ {
+  "Column1": 257,
+  "III CIT Leetcode IDs": "23CS304",
+  "Column3": "JAYASOORYA M",
+  "Column4": "jayasoorya55"
+ },
+ {
+  "Column1": 258,
+  "III CIT Leetcode IDs": "23CS305",
+  "Column3": "Pradeep T.E",
+  "Column4": "pradeep_cse05"
+ }
+]

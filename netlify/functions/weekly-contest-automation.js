@@ -1,5 +1,5 @@
 // netlify/functions/weekly-contest-automation.js
-// Automated weekly contest fetching for Netlify
+// Automated weekly contest fetching with dynamic table creation for Netlify
 
 import ContestFetcher from '../../lib/contest-fetcher.js';
 

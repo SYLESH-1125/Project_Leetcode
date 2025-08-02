@@ -1,5 +1,6 @@
-// pages/api/contests/[id].js - API route for specific contest data
+// pages/api/contests/[id].js - API route for specific contest data from dynamic tables
 import { db } from '../../../lib/supabase.js'
+import DynamicTableManager from '../../../lib/dynamic-table-manager.js'
 
 export default async function handler(req, res) {
   const { id } = req.query
@@ -13,14 +14,27 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Invalid contest ID' })
       }
 
-      // Fetch contest, results, and stats
-      const [contest, results, stats] = await Promise.all([
-        db.getContest(contestId),
-        db.getContestResults(contestId),
-        db.getContestStats(contestId)
-      ])
+      // Fetch contest info
+      const contest = await db.getContest(contestId)
+      
+      if (!contest) {
+        return res.status(404).json({ error: 'Contest not found' })
+      }
 
-      // Separate users based on participated column (more accurate than score)
+      if (!contest.table_name) {
+        return res.status(404).json({ error: 'Contest table not found - contest may not be processed yet' })
+      }
+
+      // Initialize table manager
+      const tableManager = new DynamicTableManager()
+
+      // Fetch data from dynamic contest table
+      const results = await tableManager.getContestTableData(contest.table_name)
+      
+      // Get table statistics
+      const stats = await tableManager.getTableStats(contest.table_name)
+
+      // Separate users based on participated column
       const foundUsers = results.filter(r => r.participated === true)
       const notFoundUsers = results.filter(r => r.participated === false)
 
@@ -32,7 +46,8 @@ export default async function handler(req, res) {
           target_users: results.length,
           found_users: foundUsers.length,
           not_found_users: notFoundUsers.length,
-          success_rate: stats ? `${stats.success_rate}%` : '0%'
+          success_rate: stats ? `${stats.participation_rate}%` : '0%',
+          table_name: contest.table_name
         },
         found_users: foundUsers,
         not_found_users: notFoundUsers

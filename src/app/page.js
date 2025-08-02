@@ -8,21 +8,35 @@ export default function Page() {
   const [contestData, setContestData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [automationStatus, setAutomationStatus] = useState(null)
+  const [sortConfig, setSortConfig] = useState({ key: 'rank', direction: 'asc' })
 
   useEffect(() => {
     const fetchContests = async () => {
       try {
         const response = await fetch('/api/contests')
-        const data = await response.json()
-        setContests(data.contests)
         
-        if (data.contests.length > 0) {
-          const latest = data.contests[0]
-          setSelectedContest(latest.contest_id)
-          await loadContestData(latest.contest_id)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+        
+        const data = await response.json()
+        
+        // Check if data and contests array exist
+        if (data && Array.isArray(data.contests)) {
+          setContests(data.contests)
+          
+          if (data.contests.length > 0) {
+            const latest = data.contests[0]
+            setSelectedContest(latest.contest_id)
+            await loadContestData(latest.contest_id)
+          }
+        } else {
+          console.error('Invalid API response:', data)
+          setContests([])
         }
       } catch (error) {
         console.error('Error loading contests:', error)
+        setContests([])
       } finally {
         setLoading(false)
       }
@@ -63,6 +77,85 @@ export default function Page() {
     
     setTimeout(() => setAutomationStatus(null), 5000)
   }
+
+  // Sorting functionality
+  const handleSort = (key) => {
+    let direction = 'asc'
+    
+    // For score column, default to descending order (highest first)
+    if (key === 'score') {
+      direction = 'desc'
+      if (sortConfig.key === key && sortConfig.direction === 'desc') {
+        direction = 'asc'
+      }
+    } else {
+      // For other columns, use normal ascending/descending toggle
+      if (sortConfig.key === key && sortConfig.direction === 'asc') {
+        direction = 'desc'
+      }
+    }
+    
+    setSortConfig({ key, direction })
+  }
+
+  const getSortedUsers = () => {
+    if (!contestData) return { found: [], notFound: [] }
+    
+    const allUsers = [
+      ...contestData.found_users.map(user => ({ ...user, participated: true })),
+      ...contestData.not_found_users.map(user => ({ ...user, participated: false }))
+    ]
+
+    const sortedUsers = [...allUsers].sort((a, b) => {
+      const { key, direction } = sortConfig
+      let aValue = a[key]
+      let bValue = b[key]
+
+      // Handle special cases
+      if (key === 'display_name' || key === 'leetcode_id') {
+        aValue = (aValue || '').toLowerCase()
+        bValue = (bValue || '').toLowerCase()
+      } else if (key === 'rank' || key === 'score') {
+        // Handle NULL values - put them at the end
+        if (aValue === null && bValue === null) return 0
+        if (aValue === null) return 1
+        if (bValue === null) return -1
+        aValue = Number(aValue)
+        bValue = Number(bValue)
+      } else if (key === 'participated') {
+        aValue = aValue ? 1 : 0
+        bValue = bValue ? 1 : 0
+      }
+
+      if (aValue < bValue) {
+        return direction === 'asc' ? -1 : 1
+      }
+      if (aValue > bValue) {
+        return direction === 'asc' ? 1 : -1
+      }
+      return 0
+    })
+
+    return {
+      found: sortedUsers.filter(user => user.participated),
+      notFound: sortedUsers.filter(user => !user.participated)
+    }
+  }
+
+  const SortableHeader = ({ sortKey, children, className = "" }) => (
+    <th 
+      className={`px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer hover:bg-gray-100 transition-colors ${className}`}
+      onClick={() => handleSort(sortKey)}
+    >
+      <div className="flex items-center gap-2">
+        {children}
+        <div className="flex flex-col">
+          <span className={`text-xs ${sortConfig.key === sortKey && sortConfig.direction === 'asc' ? 'text-blue-600' : 'text-gray-300'}`}>▲</span>
+          <span className={`text-xs ${sortConfig.key === sortKey && sortConfig.direction === 'desc' ? 'text-blue-600' : 'text-gray-300'}`}>▼</span>
+        </div>
+      </div>
+    </th>
+  )
 
   if (loading) {
     return (
@@ -209,12 +302,21 @@ export default function Page() {
             {/* Leaderboard */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="px-6 py-4 bg-gray-50 border-b">
-                <h2 className="text-2xl font-semibold text-gray-900">
-                  🏅 Contest {selectedContest} - {contestData.contest.title}
-                </h2>
-                <p className="text-sm text-gray-600 mt-1">
+                <div className="flex items-center justify-between mb-2">
+                  <h2 className="text-2xl font-semibold text-gray-900">
+                    🏅 Contest {selectedContest} - {contestData.contest.title}
+                  </h2>
+                  <div className="text-sm text-gray-600 bg-white px-3 py-1 rounded-full border">
+                    📊 Sorted by: <span className="font-medium capitalize">{sortConfig.key.replace('_', ' ')}</span> 
+                    <span className="ml-1">{sortConfig.direction === 'asc' ? '↑' : '↓'}</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600">
                   {new Date(contestData.contest.start_time).toLocaleString()} | 
                   Total Participants: {contestData.contest.total_participants?.toLocaleString() || 'N/A'}
+                </p>
+                <p className="text-xs text-blue-600 mt-2">
+                  💡 Click on any column header to sort the data
                 </p>
               </div>
 
@@ -225,114 +327,101 @@ export default function Page() {
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Position
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <SortableHeader sortKey="display_name">
                         Name
-                      </th>
+                      </SortableHeader>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         LeetCode ID
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <SortableHeader sortKey="participated">
                         Status
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      </SortableHeader>
+                      <SortableHeader sortKey="rank">
                         Contest Rank
-                      </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      </SortableHeader>
+                      <SortableHeader sortKey="score">
                         Score
-                      </th>
+                      </SortableHeader>
                       <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Performance
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
-                    {/* Found Users */}
-                    {contestData.found_users.map((user, index) => (
-                      <tr key={user.leetcode_id} className="hover:bg-gray-50 transition-colors">
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                              <span className="text-sm font-medium text-green-800">{index + 1}</span>
+                    {/* Render sorted users */}
+                    {(() => {
+                      const { found, notFound } = getSortedUsers()
+                      const allSortedUsers = [...found, ...notFound]
+                      
+                      return allSortedUsers.map((user, index) => (
+                        <tr key={user.leetcode_id} className={`hover:bg-gray-50 transition-colors ${!user.participated ? 'opacity-75' : ''}`}>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <div className="flex items-center">
+                              <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
+                                user.participated ? 'bg-green-100' : 'bg-gray-100'
+                              }`}>
+                                <span className={`text-sm font-medium ${
+                                  user.participated ? 'text-green-800' : 'text-gray-600'
+                                }`}>{index + 1}</span>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm font-medium text-gray-900">{user.display_name}</div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500">{user.original_leetcode_id || user.leetcode_id}</div>
-                          {user.matched_variation && (
-                            <div className="text-xs text-blue-600">→ {user.matched_variation}</div>
-                          )}
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
-                            ✅ Participated
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                          #{user.rank ? user.rank.toLocaleString() : 'N/A'} / {contestData.contest.total_participants?.toLocaleString() || 'N/A'}
-                          {user.rank && contestData.contest.total_participants && (
-                            <div className="text-xs text-gray-500">
-                              {(((contestData.contest.total_participants - user.rank + 1) / contestData.contest.total_participants) * 100).toFixed(1)}% percentile
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <div className="text-sm font-medium text-gray-900">{user.display_name}</div>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <div className="text-sm text-gray-500">{user.original_leetcode_id || user.leetcode_id}</div>
+                            {user.matched_variation && (
+                              <div className="text-xs text-blue-600">→ {user.matched_variation}</div>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                              user.participated 
+                                ? 'bg-green-100 text-green-800' 
+                                : 'bg-red-100 text-red-800'
+                            }`}>
+                              {user.participated ? '✅ Participated' : '❌ Did Not Participate'}
+                            </span>
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            {user.participated && user.rank ? (
+                              <>
+                                #{user.rank.toLocaleString()} / {contestData.contest.total_participants?.toLocaleString() || 'N/A'}
+                                {contestData.contest.total_participants && (
+                                  <div className="text-xs text-gray-500">
+                                    {(((contestData.contest.total_participants - user.rank + 1) / contestData.contest.total_participants) * 100).toFixed(1)}% percentile
+                                  </div>
+                                )}
+                              </>
+                            ) : (
+                              <span className="text-gray-500">N/A</span>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <div className="text-sm font-medium text-gray-900">
+                              {user.participated && user.score !== null ? user.score + ' pts' : 'N/A'}
                             </div>
-                          )}
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm font-medium text-gray-900">{user.score ? user.score + ' pts' : 'N/A'}</div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className={`text-sm font-medium ${
-                            !user.score ? 'text-gray-500' :
-                            user.score >= 18 ? 'text-green-600' :
-                            user.score >= 15 ? 'text-blue-600' :
-                            user.score >= 12 ? 'text-yellow-600' :
-                            user.score >= 9 ? 'text-orange-600' : 'text-red-600'
-                          }`}>
-                            {!user.score ? 'Did Not Participate' :
-                             user.score >= 18 ? '🌟 Excellent' :
-                             user.score >= 15 ? '💪 Very Good' :
-                             user.score >= 12 ? '👍 Good' :
-                             user.score >= 9 ? '👌 Fair' : '📈 Needs Improvement'}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-
-                    {/* Not Found Users */}
-                    {contestData.not_found_users.map((user, index) => (
-                      <tr key={user.leetcode_id} className="hover:bg-gray-50 transition-colors opacity-75">
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="flex items-center">
-                            <div className="flex-shrink-0 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                              <span className="text-sm font-medium text-gray-600">{contestData.found_users.length + index + 1}</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm font-medium text-gray-900">{user.display_name}</div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500">{user.leetcode_id}</div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">
-                            ❌ Did Not Participate
-                          </span>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          N/A
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500">N/A</div>
-                        </td>
-                        <td className="px-6 py-4 whitespace-nowrap">
-                          <span className="text-sm font-medium text-gray-500">
-                            Did Not Participate
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            <span className={`text-sm font-medium ${
+                              !user.participated || !user.score ? 'text-gray-500' :
+                              user.score >= 18 ? 'text-green-600' :
+                              user.score >= 15 ? 'text-blue-600' :
+                              user.score >= 12 ? 'text-yellow-600' :
+                              user.score >= 9 ? 'text-orange-600' : 'text-red-600'
+                            }`}>
+                              {!user.participated ? 'Did Not Participate' :
+                               !user.score ? 'Did Not Score' :
+                               user.score >= 18 ? '🌟 Excellent' :
+                               user.score >= 15 ? '� Very Good' :
+                               user.score >= 12 ? '� Good' :
+                               user.score >= 9 ? '👌 Fair' : '📈 Needs Improvement'}
+                            </span>
+                          </td>
+                        </tr>
+                      ))
+                    })()}
                   </tbody>
                 </table>
               </div>
@@ -344,15 +433,19 @@ export default function Page() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">📊 Contest Statistics</h3>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
                   <div>
-                    <p className="text-3xl font-bold text-blue-600">{contestData.stats.max_score || 'N/A'}</p>
+                    <p className="text-3xl font-bold text-blue-600">{contestData.stats?.max_score || 'N/A'}</p>
                     <p className="text-sm text-gray-600">Highest Score</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-green-600">{contestData.stats.avg_score ? contestData.stats.avg_score.toFixed(1) : 'N/A'}</p>
+                    <p className="text-3xl font-bold text-green-600">
+                      {contestData.stats?.avg_score && typeof contestData.stats.avg_score === 'number' 
+                        ? contestData.stats.avg_score.toFixed(1) 
+                        : contestData.stats?.avg_score || 'N/A'}
+                    </p>
                     <p className="text-sm text-gray-600">Average Score</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-orange-600">{contestData.stats.min_score || 'N/A'}</p>
+                    <p className="text-3xl font-bold text-orange-600">{contestData.stats?.min_score || 'N/A'}</p>
                     <p className="text-sm text-gray-600">Lowest Score</p>
                   </div>
                   <div>
